@@ -1,0 +1,11 @@
+$logo--width: 200px;
+$logo--margin-top: 35px;
+
+header .logo {
+    width: $logo--width;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: $logo--margin-top;
+    transform: translateX(-50%);
+}

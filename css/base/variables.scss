@@ -1,0 +1,99 @@
+/*
+    Mediaqueries
+*/
+// Media queries
+@mixin mq($point) {
+  @if $point == medium {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == laptop {
+    @media (max-width: 1400px) { @content; }
+  }
+  @else if $point == tablet {
+    @media (max-width: 1024px) { @content; }
+  }
+  @else if $point == tablet-portrait {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $point == mini-tablet {
+    @media (max-width: 600px) { @content; }
+  }
+  @else if $point == mobile {
+    @media (max-width: 500px)  { @content; }
+  }
+  @else if $point == mobile-legacy {
+    @media (max-width: 400px) { @content; }
+  }
+}
+
+/*
+    Colors
+*/
+$color__blue: #1265CF;
+$color__yellow: #FFE28E;
+
+/*
+    Fonts
+*/
+/**
+ * http://applemusic.tumblr.com/
+ * https://jsfiddle.net/xq56dmrh/
+ */
+
+/** Ultra Light */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+/** Thin */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */ 
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+body {
+    color: $color__yellow;
+    font-family: 'San Francisco', helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 200;
+    -webkit-text-stroke: 0.5px;
+}
+
+h4 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+}

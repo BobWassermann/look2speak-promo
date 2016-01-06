@@ -1,0 +1,39 @@
+$device--width: 300px;
+$device--height: 500px;
+
+$device--width__tablet: $device--width/1.2;
+$device--height__tablet: $device--height/1.2;
+
+$device--width__mobile: $device--width/1.5;
+$device--height__mobile: $device--height/1.5;
+
+.device {
+    width: $device--width;
+    height: $device--height;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    @include mq(tablet) {
+        width: $device--width__tablet;
+        height: $device--height__tablet;
+    }
+
+    @include mq(tablet-portrait) {
+        left: $device--width__tablet/1.1;
+    }
+
+    @include mq(mobile) {
+        width: $device--width__mobile;
+        height: $device--height__mobile;
+        left: 50%;
+    }
+}
+
+.device.iphone {
+    background-image: url(images/iphone.png);
+}

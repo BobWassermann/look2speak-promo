@@ -1,0 +1,210 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+    Mediaqueries
+*/
+/*
+    Colors
+*/
+/*
+    Fonts
+*/
+/**
+ * http://applemusic.tumblr.com/
+ * https://jsfiddle.net/xq56dmrh/
+ */
+/** Ultra Light */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff"); }
+
+/** Thin */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff"); }
+
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff"); }
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff"); }
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff"); }
+
+/** Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff"); }
+
+body {
+  color: #FFE28E;
+  font-family: 'San Francisco', helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  font-weight: 200;
+  -webkit-text-stroke: 0.5px; }
+
+h4 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+header .logo {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 35px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(18, 101, 207, 0.5);
+  height: 70px; }
+
+footer p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  color: #FFE28E; }
+
+.device {
+  width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%); }
+  @media (max-width: 1024px) {
+    .device {
+      width: 250px;
+      height: 416.66667px; } }
+  @media (max-width: 768px) {
+    .device {
+      left: 227.27273px; } }
+  @media (max-width: 500px) {
+    .device {
+      width: 200px;
+      height: 333.33333px;
+      left: 50%; } }
+
+.device.iphone {
+  background-image: url(images/iphone.png); }
+
+.download {
+  position: fixed;
+  left: calc(50% + 150px);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: calc(50% - 150px);
+  box-sizing: border-box;
+  padding: 2rem;
+  text-align: center; }
+  @media (max-width: 768px) {
+    .download {
+      left: 50%;
+      width: 50%; } }
+  @media (max-width: 500px) {
+    .download {
+      display: none; } }
+
+.download .links:before, .download .links:after {
+  content: '';
+  width: 30%;
+  height: 1px;
+  background-color: #FFE28E;
+  position: absolute;
+  top: 35%; }
+
+.download .links:before {
+  left: 0; }
+
+.download .links:after {
+  right: 0; }
+
+.download i {
+  font-size: 35px;
+  color: #FFE28E;
+  margin: 1rem; }
+
+.download h4 {
+  margin: 1rem 0; }
+
+.download p {
+  max-width: 350px;
+  display: block;
+  margin: 1rem auto 0; }
+
+body, html {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+
+.app {
+  background: center/cover url(images/bg.png) no-repeat;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 0; }

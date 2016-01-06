@@ -1,0 +1,17 @@
+@import 'base/reset', 'base/variables';
+@import 'components/header', 'components/footer', 'components/device', 'components/download';
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app {
+    background: center/cover url(images/bg.png) no-repeat;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+}

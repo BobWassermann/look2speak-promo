@@ -1,0 +1,54 @@
+.download {
+    position: fixed;
+    left: calc(50% + #{$device--width/2});
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(50% - #{$device--width/2});
+    box-sizing: border-box;
+    padding: 2rem;
+    text-align: center;
+
+    @include mq(tablet-portrait) {
+        left: 50%;
+        width: 50%;
+    }
+
+    @include mq(mobile) {
+        display: none;
+    }
+
+}
+
+.download .links {
+    &:before,
+    &:after {
+        content: '';
+        width: 30%;
+        height: 1px;
+        background-color: $color__yellow;
+        position: absolute;
+        top: 35%;
+    }
+    &:before {
+        left: 0;
+    }
+    &:after {
+        right: 0;
+    }
+}
+
+.download i {
+    font-size: 35px;
+    color: $color__yellow;
+    margin: 1rem;
+}
+
+.download h4 {
+    margin: 1rem 0;
+}
+
+.download p {
+    max-width: 350px;
+    display: block;
+    margin: 1rem auto 0;
+}
