@@ -60,7 +60,7 @@ var Download = React.createClass({
         <div className="links">
           <h4>Gratis</h4>
           <a href="https://appsto.re/nl/AnZo-.i"><i className="fa fa-apple"></i></a>
-          <a href=""><i className="fa fa-android"></i></a>
+          <a href="https://play.google.com/store/apps/details?id=com.look2speak"><i className="fa fa-android"></i></a>
         </div>
         <p>Look2Speak is een gratis app die communicatie mogelijk maakt zonder dezelfde taal te spreken. Look2Speak is een initiatief van Look2Go en wordt momenteel ondersteund met de Nederlandse taal.</p>
       </div>
