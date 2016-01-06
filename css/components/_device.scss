@@ -28,9 +28,10 @@ $device--height__mobile: $device--height/1.5;
     }
 
     @include mq(mobile) {
-        width: $device--width__mobile;
-        height: $device--height__mobile;
-        left: 50%;
+        display: none;
+        // width: $device--width__mobile;
+        // height: $device--height__mobile;
+        // left: 50%;
     }
 }
 

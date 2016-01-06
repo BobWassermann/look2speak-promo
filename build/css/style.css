@@ -144,9 +144,7 @@ footer p {
       left: 227.27273px; } }
   @media (max-width: 500px) {
     .device {
-      width: 200px;
-      height: 333.33333px;
-      left: 50%; } }
+      display: none; } }
 
 .device.iphone {
   background-image: url(images/iphone.png); }
@@ -167,7 +165,8 @@ footer p {
       width: 50%; } }
   @media (max-width: 500px) {
     .download {
-      display: none; } }
+      width: 100%;
+      left: 0; } }
 
 .download .links:before, .download .links:after {
   content: '';

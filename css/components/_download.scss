@@ -14,7 +14,8 @@
     }
 
     @include mq(mobile) {
-        display: none;
+        width: 100%;
+        left: 0;
     }
 
 }
