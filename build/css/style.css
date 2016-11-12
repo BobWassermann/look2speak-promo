@@ -123,6 +123,12 @@ header .contact {
   text-align: center;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
+  @media (max-width: 500px) {
+    header .contact {
+      top: 100px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); } }
   header .contact:hover {
     background: #FFE28E;
     color: #1265CF; }

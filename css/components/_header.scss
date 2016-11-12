@@ -26,6 +26,12 @@ header .contact {
     text-align: center;
     transition: 0.3s;
 
+    @include mq(mobile) {
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
     &:hover {
         background: $color__yellow;
         color: $color__blue;
