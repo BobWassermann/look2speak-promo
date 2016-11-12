@@ -34,6 +34,7 @@ var Header = React.createClass({
     return (
       <header className="top">
         <img src="css/images/logo.svg" className="logo" alt="Look2Speak" />
+        <a className="contact" href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#105;&#x6e;&#102;&#x6f;&#x40;&#108;&#x6f;&#x6f;&#107;&#50;&#103;&#x6f;&#x2e;&#99;&#111;&#x6d;">Contact</a>
       </header>
     )
   }

@@ -9,3 +9,25 @@ header .logo {
     top: $logo--margin-top;
     transform: translateX(-50%);
 }
+
+header .contact {
+    text-decoration: none;
+    color: $color__yellow;
+    text-transform: uppercase;
+    position: fixed;
+    right: 5%;
+    top: 40px;
+    font-weight: 600;
+    border: 2px solid $color__yellow;
+    padding: 0.7em 1em 0.7em 1.5em;
+    border-radius: 180px;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-align: center;
+    transition: 0.3s;
+
+    &:hover {
+        background: $color__yellow;
+        color: $color__blue;
+    }
+}
